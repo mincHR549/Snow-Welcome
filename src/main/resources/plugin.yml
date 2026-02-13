@@ -1,0 +1,8 @@
+name: Welcome
+version: '${version}'
+main: mc233.fun.welcome.Welcome
+api-version: '1.20'
+depend: [Vault]
+commands:
+  welcome:
+    usage: /welcome <player>

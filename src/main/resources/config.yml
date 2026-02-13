@@ -1,0 +1,36 @@
+welcome-message: |
+  <white>————————————————
+  <white>⻬:offset_-1:⻭
+  <white>
+  <green>欢迎新玩家 <player> 加入服务器！</green>
+  <red><click:run_command:/welcome <player>>     [点我欢迎新玩家]</click></red>
+  <white>————————————————
+
+sender-messages:
+  - "厥新人！厥新人！厥新人！！"
+  # - "<player> 来啦，欢迎欢迎！"
+  # - "新人 <player>，多多关照！"
+
+welcome-limit-seconds: 90
+welcome-limit-seconds-message: "§c时间过了！"
+welcomed: "§c你已经欢迎过该玩家了！"
+not-new: "§c不是新玩家或过期了"
+
+rewards:
+  money:
+    enable: true
+    min: 100
+    max: 800
+    command: "money give %player% %amount%"
+
+  playerpoints:
+    enable: true
+    min: 1
+    max: 2
+    command: "points give %player% %amount%"
+
+  command:
+    enable: true
+    commands:
+      - "titlemsg %sender% -in:10 -out:10 -keep:20 \n⻪:offset_-1:⻫"
+
